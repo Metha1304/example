@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(sympo_bg.jpg);
+}
+
+h1, h5 {
+    text-align: center;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    font-family: "Handlee", cursive;
+    font-weight: 900;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+/* Initially hide the nav-links for smaller screens */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+/* Hide nav-links on mobile view */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* When the burger is clicked, show the nav-links */
+    .nav-links.active {
+        display: flex;
+    }
+    
+    /* Style for individual nav items in mobile view */
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Burger Menu */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Burger animation when active */
+.burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle .line2 {
+    opacity: 0;
+}
+
+.burger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-links li {
+    margin: 0 15px;
+    padding: 30px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #5086f8;
+}
+
+/* Burger Menu */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Body Content */
+.body-content {
+    text-align: center;
+    padding: 40px;
+  
+    margin-top: 20px;
+}
+
+.body-content h1 {
+    font-size: 100px;
+    font-family: "poppins";
+    color: white;
+    font-weight: 200;
+}
+
+.body-content h5 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 100;
+}
+
+.body-content p {
+    font-size: 1rem;
+    color: white;
+    margin: 10px 0;
+    font-weight: 200;
+}
+
+.body-content .buttons {
+    margin-top: 20px;
+}
+
+.body-content button{
+    padding: 20px;
+    margin:10px;
+    background-color: #007BFF;
+    color:white;
+    border-radius: 30px;
+    font-family: "poppins";
+    font-size: 15px;
+    font-weight: 400;
+}
+.body-content button a {
+    text-decoration: none;
+    color: white;
+}
+
+.body-content button:hover{
+    /* Apply box shadow on all sides */
+
+     color:white;
+     background-color: #0056b3;
+
+}
+
+
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Semi-transparent background for visibility */
+    text-align: center;
+    padding: 15px 10px;  /* Reduced padding for smaller devices */
+    color: white;
+    font-size: 1rem; /* Default font size */
+    z-index: 100; /* Ensure the footer is above other elements */
+}
+
+/* Responsive Styles for Footer */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.9rem; /* Slightly smaller font on tablets */
+        padding: 12px 10px; /* Adjust padding for better fit */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.8rem; /* Smaller font on mobile devices */
+        padding: 10px 5px; /* Reduce padding on mobile for better spacing */
+    }
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .body-content h1 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    .body-content h5 {
+        font-size: 1.2rem;
+    }
+
+    .body-content button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .body-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .body-content h5 {
+        font-size: 1rem;
+    }
+
+    .body-content button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    footer h4 {
+        font-size: 0.8rem;
+    }
+}
