@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 20px;
+    background-image: url(sympo_bg.jpg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex-grow: 1;
+}
+
+.container h1 {
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.container .buttons {
+    text-align: right;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.event-div h2 {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.event-div ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-div ul li {
+    list-style: none;
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-div ul li:hover {
+    transform: scale(1.05);
+}
+
+.event-div ul li h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.Back {
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    #events {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-div ul li {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .container .buttons {
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+}
