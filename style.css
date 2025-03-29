@@ -226,7 +226,7 @@ footer {
     }
 
     .body-content h1 {
-        font-size: 4rem;
+        font-size: 75px;
         font-weight: 300;
     }
 
@@ -242,7 +242,7 @@ footer {
 
 @media (max-width: 480px) {
     .body-content h1 {
-        font-size: 1rem;
+        font-size: 50px;
         font-weight:200;
     }
 
