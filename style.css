@@ -227,7 +227,7 @@ footer {
 
     .body-content h1 {
         font-size: 75px;
-        font-weight: 300;
+        
     }
 
     .body-content h5 {
@@ -243,7 +243,7 @@ footer {
 @media (max-width: 480px) {
     .body-content h1 {
         font-size: 50px;
-        font-weight:200;
+        
     }
 
     .body-content h5 {
