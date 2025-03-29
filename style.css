@@ -192,6 +192,7 @@ footer {
     color: white;
     font-size: 1rem; /* Default font size */
     z-index: 100; /* Ensure the footer is above other elements */
+    margin-top:10px;
 }
 
 /* Responsive Styles for Footer */
